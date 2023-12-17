@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Login Fail::dashboard     https://orangehrm.qedgetech.com/symfony/web/index.php/auth/validateCredentials]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-11-26T22:43:14 IST" name="Default suite" finished-at="2023-11-26T22:44:53 IST" duration-ms="98486">
+    <groups>
+    </groups>
+    <test started-at="2023-11-26T22:43:14 IST" name="Default test" finished-at="2023-11-26T22:44:53 IST" duration-ms="98486">
+      <class name="nov16.Using_PropertyFiles">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:nov16.Using_PropertyFiles@5c5eefef]" started-at="2023-11-26T22:43:14 IST" name="setUp" finished-at="2023-11-26T22:44:42 IST" duration-ms="88035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="starttest()[pri:0, instance:nov16.Using_PropertyFiles@5c5eefef]" started-at="2023-11-26T22:44:42 IST" name="starttest" finished-at="2023-11-26T22:44:52 IST" duration-ms="9093" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login Fail::dashboard     https://orangehrm.qedgetech.com/symfony/web/index.php/auth/validateCredentials]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- starttest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nov16.Using_PropertyFiles@5c5eefef]" started-at="2023-11-26T22:44:52 IST" name="tearDown" finished-at="2023-11-26T22:44:53 IST" duration-ms="1302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- nov16.Using_PropertyFiles -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
