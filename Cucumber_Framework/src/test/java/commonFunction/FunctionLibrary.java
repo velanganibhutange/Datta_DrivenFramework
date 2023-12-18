@@ -227,6 +227,22 @@ public class FunctionLibrary {
 		System.out.println(Exp_suppliernumber+"     "+Act_suppliernumber);
 		Assert.assertEquals(Exp_suppliernumber, Act_suppliernumber, "Supplier number Not Matching");
 	}
+	public static void customerTable(WebDriver driver)throws Throwable
+	{
+		FileReader fr = new FileReader("./CaptureData/Customernum.txt");
+		BufferedReader br = new BufferedReader(fr);
+		String Exp_customernumber =br.readLine();
+		if(!driver.findElement(By.xpath("//input[@id='psearch']")).isDisplayed())
+			//if search textbox is not displayed click search panel button
+			driver.findElement(By.xpath("//span[@data-caption='Search']")).click();
+		//enter category name
+		driver.findElement(By.xpath("//input[@id='psearch']")).sendKeys(Exp_customernumber);
+		driver.findElement(By.xpath("//button[@id='btnsubmit']")).click();
+		Thread.sleep(3000);
+		String Act_customernumber = driver.findElement(By.xpath("//table[@class='table ewTable']/tbody/tr[1]/td[6]/div/span/span")).getText();
+		System.out.println(Exp_customernumber+"     "+Act_customernumber);
+		Assert.assertEquals(Exp_customernumber, Act_customernumber, "customer number Not Matching");
+	}
 	public static String generateDate()
 	{
 		Date date = new Date();
